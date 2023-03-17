@@ -16,7 +16,17 @@ for (let i = 0; i < 20; i++) {
     clones.push(generarClones());
 }console.log(clones)
 
-console.log(Math.max(...clones));
+let edadMayor= 0;
+clones.forEach(function(clon){
+    if (clon.edades>edadMayor){
+        edadMayor=clon.edades
+    }
+    
+   
+
+}) 
+console.log(edadMayor)
+
 
 
 
